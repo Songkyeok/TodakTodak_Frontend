@@ -1,5 +1,7 @@
 import { createRouter, createWebHistory } from "vue-router";
 import HomeView from "../views/HomeView.vue";
+import SignUp from "../views/SignUp.vue";
+import Login from "../views/Login.vue";
 import adminSideBar from "../layouts/mypageSideBar.vue";
 import footer from "../layouts/footer.vue";
 import header from "../layouts/header.vue";
@@ -23,6 +25,15 @@ const routes = [
       import(/* webpackChunkName: "about" */ "../views/AboutView.vue"),
   },
   {
+    path: "/join",
+    name: "SignUp",
+    component: SignUp,
+  },
+  {
+    path: "/login",
+    name: "Login",
+    component: Login,
+  },
     path: "/sidebar",
     name: "adminSideBar",
     component: adminSideBar,
